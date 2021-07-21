@@ -1,0 +1,150 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>UserManagementSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name> name </servlet-name>
+  <servlet-class>com.check.servlet.CheckServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name> name </servlet-name>
+  <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name> Registration </servlet-name>
+  <servlet-class>com.user.management.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name> Registration </servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>com.user.management.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Logout</servlet-name>
+  <servlet-class>com.user.management.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>Logout</servlet-name>
+  <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>AdminRegister</servlet-name>
+  <servlet-class>com.user.management.servlets.RegisterAdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>AdminRegister</servlet-name>
+  <url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Update</servlet-name>
+  <servlet-class>com.user.management.servlets.updateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>Update</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Delete</servlet-name>
+  <servlet-class>com.user.management.servlets.DeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>Delete</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>Block</servlet-name>
+  <servlet-class>com.user.management.servlets.BlockServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>Block</servlet-name>
+  <url-pattern>/block</url-pattern>
+  </servlet-mapping>
+  
+   
+  <servlet>
+  <servlet-name>UnBlock</servlet-name>
+  <servlet-class>com.user.management.servlets.UnBlockServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>UnBlock</servlet-name>
+  <url-pattern>/unblock</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>ViewHistory</servlet-name>
+  <servlet-class>com.user.management.servlets.ViewStatusServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>ViewHistory</servlet-name>
+  <url-pattern>/viewStatus</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>Forgot</servlet-name>
+  <servlet-class>com.user.management.servlets.ForgotPasswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>Forgot</servlet-name>
+  <url-pattern>/forVerification</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>Verification</servlet-name>
+  <servlet-class>com.user.management.servlets.VerifyCode</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>Verification</servlet-name>
+  <url-pattern>/code</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>ResetPassword</servlet-name>
+  <servlet-class>com.user.management.servlets.ResetPasswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>ResetPassword</servlet-name>
+  <url-pattern>/resetPassword</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
